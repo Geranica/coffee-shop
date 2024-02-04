@@ -1,0 +1,66 @@
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0px 15px;
+  max-width: 1144px;
+}
+
+.navigation {
+  
+  // .header__container
+
+  &__container {
+    display: flex;
+  }
+
+  // .header__logo
+
+  &__logo {
+    padding-top: 30px;
+  }
+
+  // .header__logo-link
+
+  &__logo-link {
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  // .header__menu
+
+  &__menu {
+    display: flex;
+    margin-left: -6px;
+    padding-top: 49px;
+  }
+
+  // .header__list
+
+  &__list {
+    display: flex;
+    gap: 40px;
+  }
+
+  // .header__item
+
+  &__item {
+    
+    font-family: "Merienda";
+
+    a {
+      font-size: 12px;
+      font-weight: 400;
+      color: white;
+    }
+
+    &_black {
+      a {
+        color: black;
+      }
+    }
+  }
+}
+
+

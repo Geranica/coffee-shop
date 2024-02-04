@@ -1,0 +1,51 @@
+.about-us {
+  background-color: #ffffff;
+  min-height: 520px;
+  font-family: "Merienda";
+
+  // .about-us__container
+
+  &__container {
+    padding-top: 80px;
+    padding-bottom: 101px;
+    display: flex;
+    justify-content: center;
+  }
+
+  // .about-us__content
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 589px;
+  }
+
+  // .about-us__title
+
+  &__title {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  // .about-us__bean-image
+
+  &__bean-image {
+    width: 200px;
+    margin-top: 20px;
+  }
+
+  // .about-us__text
+
+  &__text {
+    margin-top: 41px;
+    p {
+      line-height: 1.4;
+    }
+    p:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+}

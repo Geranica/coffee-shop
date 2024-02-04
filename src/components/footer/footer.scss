@@ -1,0 +1,10 @@
+.container {
+}
+.footer {
+		// .footer__container
+
+		&__container {
+         min-height: 150px;
+			color: black;
+		}
+}
