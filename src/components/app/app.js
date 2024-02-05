@@ -20,7 +20,7 @@ class App extends Component {
           <AboutUs />
           <OurBest />
         </main>
-        <footer>
+        <footer className="footer">
           <Footer />
         </footer>
       </div>

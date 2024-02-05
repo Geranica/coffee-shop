@@ -13,14 +13,13 @@ class Navigation extends Component {
 
     if (navigationColor === 'black') {
       logo = blackLogo;
-      className += '_black'
+      className += ' navigation__item_black'
     }
     
 
     return (
       <div className="navigation">
-        <div className="container">
-          <div className="navigation__container">
+          <div className="navigation__container container">
             <div className="navigation__logo">
               <a className="navigation__logo-link" href="#">
                 <img src={logo} alt="logo-img" />
@@ -41,7 +40,6 @@ class Navigation extends Component {
             </nav>
           </div>
         </div>
-      </div>
     );
   }
 }

@@ -7,8 +7,7 @@ class AboutUs extends Component {
   render() {
     return (
       <section className="about-us">
-        <div className="container">
-          <div className="about-us__container">
+          <div className="about-us__container container">
             <div className="about-us__content">
               <h2 className="about-us__title">About Us</h2>
               <img
@@ -36,7 +35,6 @@ class AboutUs extends Component {
               </div>
             </div>
           </div>
-        </div>
       </section>
     );
   }
