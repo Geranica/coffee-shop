@@ -5,7 +5,7 @@ import "./card.scss";
 class Card extends Component {
   render() {
     let { cardImage, cardNameAndQuantity, cardPrice } = this.props;
-    
+
     return (
       <li className="card">
         <div className="card__content">
@@ -20,10 +20,8 @@ class Card extends Component {
           </div>
         </div>
       </li>
-      
     );
   }
 }
 
 export default Card;
-

@@ -1,5 +1,7 @@
 import { Component } from "react";
 
+import db from "../../db/db";
+
 import Navigation from "../navigation/navigation";
 import Main from "../main/main";
 import AboutUs from "../about-us/about-us";
@@ -10,6 +12,8 @@ import "./app.scss";
 
 class App extends Component {
   render() {
+    const { bestCards } = db;
+
     return (
       <div className="wrapper">
         <header className="header">
@@ -18,7 +22,7 @@ class App extends Component {
         <main className="page">
           <Main />
           <AboutUs />
-          <OurBest />
+          <OurBest ourBestData={bestCards} />
         </main>
         <footer className="footer">
           <Footer />
