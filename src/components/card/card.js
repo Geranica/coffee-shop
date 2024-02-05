@@ -1,30 +1,29 @@
 import { Component } from "react";
 
-
-
 import "./card.scss";
 
 class Card extends Component {
   render() {
-
-    let {cardImage, cardNameAndQuantity, cardPrice} = this.props;
+    let { cardImage, cardNameAndQuantity, cardPrice } = this.props;
     
     return (
       <li className="card">
-        <a className="card__link-image" href="#">
-          <img src={cardImage} alt="card" />
-        </a>
-        <div className="card__description">
-          <div className="card__name-and-quantity ">
-            {cardNameAndQuantity}
+        <div className="card__content">
+          <div className="card__image-wrapper">
+            <img className="card__image" src={cardImage} alt="card" />
           </div>
-          <div className="card__price">
-              {`${cardPrice}$`}
+          <div className="card__description">
+            <div className="card__name-and-quantity ">
+              {cardNameAndQuantity}
             </div>
+            <div className="card__price">{`${cardPrice}$`}</div>
+          </div>
         </div>
       </li>
+      
     );
   }
 }
 
 export default Card;
+
