@@ -1,5 +1,3 @@
-import { Component } from "react";
-
 import db from "../../db/db";
 
 import Navigation from "../navigation/navigation";
@@ -10,26 +8,24 @@ import Footer from "../footer/footer";
 
 import "./app.scss";
 
-class App extends Component {
-  render() {
-    const { bestCards } = db;
+const App = () => {
+  const { bestCards } = db;
 
-    return (
-      <div className="wrapper">
-        <header className="header">
-          <Navigation />
-        </header>
-        <main className="page">
-          <Main />
-          <AboutUs />
-          <OurBest ourBestData={bestCards} />
-        </main>
-        <footer className="footer">
-          <Footer />
-        </footer>
-      </div>
-    );
-  }
-}
+  return (
+    <div className="wrapper">
+      <header className="header">
+        <Navigation />
+      </header>
+      <main className="page">
+        <Main />
+        <AboutUs />
+        <OurBest ourBestData={bestCards} />
+      </main>
+      <footer className="footer">
+        <Footer />
+      </footer>
+    </div>
+  );
+};
 
 export default App;

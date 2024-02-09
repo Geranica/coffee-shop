@@ -1,10 +1,6 @@
-import { Component } from "react";
-
 import "./card.scss";
 
-class Card extends Component {
-  render() {
-    let { cardImage, cardNameAndQuantity, cardPrice } = this.props;
+const Card = ({ cardImage, cardNameAndQuantity, cardPrice }) => {
 
     return (
       <li className="card">
@@ -22,6 +18,5 @@ class Card extends Component {
       </li>
     );
   }
-}
 
 export default Card;
