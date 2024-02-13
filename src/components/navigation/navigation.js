@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./navigation.scss";
 import whiteLogo from "./img/logo.svg";
 import blackLogo from "./img/black-logo.svg";
@@ -15,9 +17,9 @@ const Navigation = ({ navigationColor }) => {
     <div className="navigation">
       <div className="navigation__container container">
         <div className="navigation__logo">
-          <a className="navigation__logo-link" href="#">
+          <Link to="/" className="navigation__logo-link">
             <img src={logo} alt="logo-img" />
-          </a>
+          </Link>
         </div>
         <nav className="navigation__menu">
           <ul className="navigation__list">
@@ -25,7 +27,7 @@ const Navigation = ({ navigationColor }) => {
               <a href="#">Coffee house</a>
             </li>
             <li className={className}>
-              <a href="#">Our coffee</a>
+              <Link to='/our-coffee'>Our coffee</Link>
             </li>
             <li className={className}>
               <a href="#">For your pleasure</a>

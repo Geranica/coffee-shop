@@ -1,0 +1,28 @@
+.our-coffee-main {
+  background: url('images/our-coffee-main-bg.png') center/cover no-repeat; 
+  min-height: 260px;
+  position: relative;
+  // .our-coffee-main__container
+
+  &__container {
+   padding-top: 130px;
+  }
+
+  // .our-coffee-main__content
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  // .our-coffee-main__title
+
+  &__title {
+   font-size: 40px;
+   font-weight: 700;
+   color: rgb(255, 255, 255);
+  }
+}
+.container {
+}

@@ -1,0 +1,59 @@
+.about-our-beans {
+  background: white;
+
+  // .about-our-beans__container
+
+  &__container {
+    display: flex;
+    column-gap: 79px;
+    padding-top: 70px;
+    padding-left: 242px;
+    padding-right: 202px;
+  }
+
+  // .about-our-beans__image
+
+  &__image {
+    flex: 0 1 38.9%;
+    aspect-ratio: 272 / 355;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      max-width: 100%;
+    }
+  }
+
+  // .about-our-beans__description
+
+  &__description {
+    flex: 1 1;
+    display: flex;
+    padding-top: 9px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  // .about-our-beans__title
+
+  &__title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  // .about-our-beans__logo
+
+  &__logo {
+    margin-bottom: 26px;
+  }
+
+  // .about-our-beans__text
+
+  &__text {
+  }
+}
+.container {
+}
