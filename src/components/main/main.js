@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./main.scss";
 import background from "./images/Main bg.png";
 import contentLogo from "./images/Beans logo.svg";
@@ -15,9 +16,9 @@ const Main = () => {
             </h2>
             <div className="main__question">Want to try our beans?</div>
           </div>
-          <a className="main__button" href="#">
+          <Link to="/our-coffee" className="main__button">
             More
-          </a>
+          </Link>
         </div>
       </div>
       <div className="main__image-background">

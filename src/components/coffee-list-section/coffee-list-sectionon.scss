@@ -1,0 +1,31 @@
+.coffee-list-sectionon {
+   min-height: 100px;
+   background-color: white;
+   padding-top: 60px;
+   padding-bottom: 30px;
+
+   // .coffee-list-sectionon__container
+
+   &__container {
+   }
+
+   // .coffee-list-sectionon__search-and-filter-block
+
+   &__search-and-filter-block {
+      display: flex;
+      column-gap: 83px;
+      padding-left: 180px;
+      margin-bottom: 61px;
+   }
+
+   // .coffee-list-sectionon__list
+
+   &__list {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 71px;
+      row-gap: 60px;
+      width: 72.5%;
+      margin: 0 auto;
+   }
+}
