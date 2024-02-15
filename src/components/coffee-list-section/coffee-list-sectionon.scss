@@ -21,21 +21,15 @@
    // .coffee-list-sectionon__list
 
    &__list {
-      padding: 0px 170px;
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      //grid-template-columns: repeat(auto-fill, 220px);
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       column-gap: 71px;
-      row-gap: 60px;
       margin: 0 auto;
-      @media(max-width: 1143px) {
-         padding: 0px 140px;
-      }
-      @media(max-width: 993px) {
-         padding: 0px 65px;
-      }
-      @media(max-width: 392px) {
-         padding: 0px 25px;
-      }
+      row-gap: 60px;
+      width: 72.5%;
+      //justify-content: center;
+      //justify-items: center;
       
    }
 
