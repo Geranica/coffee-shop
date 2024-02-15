@@ -24,7 +24,7 @@ const Navigation = ({ navigationColor }) => {
         <nav className="navigation__menu">
           <ul className="navigation__list">
             <li className={className}>
-              <a href="#">Coffee house</a>
+              <Link to="/">Coffee house</Link>
             </li>
             <li className={className}>
               <Link to='/our-coffee'>Our coffee</Link>

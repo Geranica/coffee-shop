@@ -16,7 +16,7 @@ const Main = () => {
             </h2>
             <div className="main__question">Want to try our beans?</div>
           </div>
-          <Link to="/our-coffee" className="main__button">
+          <Link to="our-coffee" className="main__button">
             More
           </Link>
         </div>

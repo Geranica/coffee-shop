@@ -1,13 +1,11 @@
-import { useState } from "react";
-
 import "./filter-panel.scss";
 
 const FilterPanel = ({ handleFilter, activeButton }) => {
   const buttonsData = [
+    { name: "All", label: "All" },
     { name: "Brazil", label: "Brazil" },
     { name: "Kenya", label: "Kenya" },
     { name: "Columbia", label: "Columbia" },
-    { name: "All", label: "All" },
   ];
   const buttons = buttonsData.map(({ name, label }) => {
     const active = activeButton === name;

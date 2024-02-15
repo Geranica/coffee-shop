@@ -18,21 +18,29 @@ const CoffeeListSection = ({
         cardPrice={item.cardPrice}
         origin={item.origin}
         key={item.id}
+        id={item.id}
       />
     );
   });
 
+  const content =
+    elements.length > 0 ? (
+      <ul className="coffee-list-section__list">{elements}</ul>
+    ) : (
+      <div className="coffee-list-section__message">Nothing was found</div>
+    );
+
   return (
-    <section className="coffee-list-sectionon">
-      <div className="coffee-list-sectionon__container container">
-        <div className="coffee-list-sectionon__search-and-filter-block">
+    <section className="coffee-list-section">
+      <div className="coffee-list-section__container container">
+        <div className="coffee-list-section__search-and-filter-block">
           <SearchPanel handleSearch={handleSearch} />
           <FilterPanel
             activeButton={activeButton}
             handleFilter={handleFilter}
           />
         </div>
-        <ul className="coffee-list-sectionon__list">{elements}</ul>
+        {content}
       </div>
     </section>
   );

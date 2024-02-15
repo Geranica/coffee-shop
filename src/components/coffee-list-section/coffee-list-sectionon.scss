@@ -1,4 +1,4 @@
-.coffee-list-sectionon {
+.coffee-list-section {
    min-height: 100px;
    background-color: white;
    padding-top: 60px;
@@ -21,11 +21,25 @@
    // .coffee-list-sectionon__list
 
    &__list {
+      padding: 0px 170px;
       display: flex;
       flex-wrap: wrap;
       column-gap: 71px;
       row-gap: 60px;
-      width: 72.5%;
       margin: 0 auto;
+      @media(max-width: 1143px) {
+         padding: 0px 140px;
+      }
+      @media(max-width: 993px) {
+         padding: 0px 65px;
+      }
+      @media(max-width: 392px) {
+         padding: 0px 25px;
+      }
+      
+   }
+
+   &__message {
+      text-align: center;
    }
 }
