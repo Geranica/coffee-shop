@@ -10,6 +10,7 @@ const OurBest = ({ ourBestData }) => {
         cardNameAndQuantity={item.cardNameAndQuantity}
         cardPrice={item.cardPrice}
         key={item.id}
+        id={item.id}
       />
     );
   });

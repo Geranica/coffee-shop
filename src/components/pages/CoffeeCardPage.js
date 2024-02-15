@@ -6,8 +6,8 @@ import CoffeeCardSection from "../coffee-card-section/coffee-card-section";
 import db from "../../db/db";
 
 const CoffeeCardPage = () => {
-  const data = db.allCoffeeCards;
   const { id } = useParams();
+  const data = id.includes('a') ? db.bestCards : db.allCoffeeCards;
 
   return (
     <>

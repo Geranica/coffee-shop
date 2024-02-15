@@ -3,20 +3,26 @@ const db = {
     {
       cardImage: "/images/images_card/best_1.jpg",
       cardNameAndQuantity: "Solimo Coffee Beans 2 kg",
+      origin: 'Kenya',
       cardPrice: 10.73,
       id: "a1",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque illo nihil, error exercitationem labore animi officiis porro voluptates voluptatem rerum quod et doloremque eveniet quia ullam. Reprehenderit molestiae placeat illo maiores sunt cupiditate quaerat?"
     },
     {
       cardImage: "/images/images_card/best_2.jpg",
       cardNameAndQuantity: "Presto Coffee Beans 1 kg",
+      origin: 'Kenya',
       cardPrice: 15.99,
       id: "a2",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque illo nihil, error exercitationem labore animi officiis porro voluptates voluptatem rerum quod et doloremque eveniet quia ullam. Reprehenderit molestiae placeat illo maiores sunt cupiditate quaerat?"
     },
     {
       cardImage: "/images/images_card/best_3.jpg",
       cardNameAndQuantity: "AROMISTICO Coffee 1 kg",
+      origin: 'Kenya',
       cardPrice: 6.99,
       id: "a3",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque illo nihil, error exercitationem labore animi officiis porro voluptates voluptatem rerum quod et doloremque eveniet quia ullam. Reprehenderit molestiae placeat illo maiores sunt cupiditate quaerat?"
     },
   ],
   allCoffeeCards: [
