@@ -2,6 +2,9 @@
   background: white;
   min-height: 485px;
   padding: 70px 0px 35px 0px;
+  @media(max-width:545px) {
+    padding-top: 50px;
+  }
 
   // .about-our-beans__container
 
@@ -11,22 +14,18 @@
 
   &__content {
     margin: 0 auto;
-    width: 61%;
     position: relative;
     justify-content: center;
     display: flex;
+    //display: grid;
+    //grid-template-columns: 272px 346px;
     flex-wrap: wrap;
     column-gap: 79px;
-    row-gap: 30px;
-    @media(max-width:1144px) {
-      width: 75%;
+    row-gap: 40px;
+    @media(max-width: 724px) {
+      //grid-template-columns: minmax(272px, 400px);
     }
-    @media(max-width:1000px) {
-      width: 80%;
-    }
-  
-    
-    
+
     &::after {
       content: "";
       position: absolute;
@@ -42,7 +41,12 @@
   // .about-our-beans__image
 
   &__image {
-    flex: 0 1 276px;
+    flex: 0 1 272px;
+    order: 1;
+    @media (max-width: 767px) {
+      flex: 0.1 1 auto;
+      order: 2;
+    }
     box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.25);
     aspect-ratio: 272 / 355;
     overflow: hidden;
@@ -57,12 +61,17 @@
   // .about-our-beans__description
 
   &__description {
-    flex: 1 0;
+    flex: 0 1 346px;
+    order: 2;
     display: flex;
     padding-top: 9px;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    @media (max-width: 767px) {
+      flex: 0 1 425px;
+      order: 1;
+    }
   }
 
   // .about-our-beans__title
@@ -82,7 +91,9 @@
   // .about-our-beans__text
 
   &__text {
+    line-height: 1.4;
   }
 }
-.container {
-}
+
+
+
