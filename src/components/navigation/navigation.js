@@ -27,7 +27,7 @@ const Navigation = ({ navigationColor }) => {
               <Link to="/">Coffee house</Link>
             </li>
             <li className={className}>
-              <Link to='/our-coffee'>Our coffee</Link>
+              <Link to="/our-coffee">Our coffee</Link>
             </li>
             <li className={className}>
               <a href="#">For your pleasure</a>

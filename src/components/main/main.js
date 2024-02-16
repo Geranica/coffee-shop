@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "./main.scss";
-import background from "./images/Main bg.png";
 import contentLogo from "./images/Beans logo.svg";
 
 const Main = () => {
@@ -20,9 +19,6 @@ const Main = () => {
             More
           </Link>
         </div>
-      </div>
-      <div className="main__image-background">
-        <img src={background} alt="background" />
       </div>
     </section>
   );
