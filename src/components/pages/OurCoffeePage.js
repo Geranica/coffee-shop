@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import OurCoffeeMain from "../our-coffee-main/our-coffee-main";
-import AboutOurBeans from "../about-our-beans/about-our-beans";
+import OurCoffeeOrForYourPleasureMain from "../our-coffee-or-for-your-pleasure-main/our-coffee-or-for-your-pleasure-main";
+import AboutOurBeans from "../about-our-beans-or-goods/about-our-beans-or-goods";
 import CoffeeListSection from "../coffee-list-section/coffee-list-section";
 
 import db from "../../db/db";
@@ -45,7 +45,7 @@ const OurCoffeePage = () => {
   const visibleCards = filterAndSearchCards();
   return (
     <>
-      <OurCoffeeMain />
+      <OurCoffeeOrForYourPleasureMain />
       <AboutOurBeans />
       <CoffeeListSection
         activeButton={filterValue}

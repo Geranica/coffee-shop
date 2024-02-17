@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import MainPage from "../pages/MainPage";
 import OurCoffeePage from "../pages/OurCoffeePage";
 import CoffeeCardPage from "../pages/CoffeeCardPage";
+import ForYourPleasurePage from "../pages/ForYourPleasurePage";
 
 import Navigation from "../navigation/navigation";
 import Footer from "../footer/footer";
@@ -10,7 +11,6 @@ import Footer from "../footer/footer";
 import "./app.scss";
 
 const App = () => {
-
   return (
     <Router>
       <div className="wrapper">
@@ -22,6 +22,7 @@ const App = () => {
             <Route path="/" element={<MainPage />} />
             <Route path="our-coffee" element={<OurCoffeePage />} />
             <Route path="our-coffee/:id" element={<CoffeeCardPage />} />
+            <Route path="for-your-pleasure" element={<ForYourPleasurePage />} />
           </Routes>
         </main>
         <footer className="footer">

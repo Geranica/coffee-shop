@@ -30,7 +30,7 @@ const Navigation = ({ navigationColor }) => {
               <Link to="/our-coffee">Our coffee</Link>
             </li>
             <li className={className}>
-              <a href="#">For your pleasure</a>
+              <Link to="for-your-pleasure">For your pleasure</Link>
             </li>
           </ul>
         </nav>

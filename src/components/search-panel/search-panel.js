@@ -13,7 +13,7 @@ const SearchPanel = ({ handleSearch }) => {
 
   return (
     <div className="search-panel">
-      <div className="search-panel__label">Lookiing for</div>
+      <div className="search-panel__label">Looking for</div>
       <input
         onChange={(e) => handleInput(e)}
         value={enteredData}
