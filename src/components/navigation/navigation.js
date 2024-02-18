@@ -1,24 +1,23 @@
 import { Link } from "react-router-dom";
 
 import "./navigation.scss";
-import whiteLogo from "./img/logo.svg";
-import blackLogo from "./img/black-logo.svg";
+import sprite from "../../icons/sprite.svg";
 
 const Navigation = ({ navigationColor }) => {
-  let logo = whiteLogo;
-  let className = "navigation__item";
-
-  if (navigationColor === "black") {
-    logo = blackLogo;
-    className += " navigation__item_black";
-  }
+  let logoColor = navigationColor === "black" ? "black-logo" : "white-logo";
+  let className =
+    navigationColor === "black"
+      ? "navigation__item navigation__item_black"
+      : "navigation__item";
 
   return (
     <div className="navigation">
       <div className="navigation__container container">
         <div className="navigation__logo">
           <Link to="/" className="navigation__logo-link">
-            <img src={logo} alt="logo-img" />
+            <svg className={logoColor}>
+              <use href={`${sprite}#beans-logo`}></use>
+            </svg>
           </Link>
         </div>
         <nav className="navigation__menu">

@@ -15,7 +15,7 @@
   // .header__logo-link
 
   &__logo-link {
-    img {
+    svg {
       width: 35px;
       height: 35px;
     }
@@ -26,7 +26,7 @@
   &__menu {
     display: flex;
     margin-left: -5px;
-    padding-top: 49px;
+    padding-top: 53px;
   }
 
   // .header__list
@@ -57,3 +57,10 @@
 }
 
 
+.white-logo {
+  fill: white;
+}
+
+.black-logo{
+  fill: black;
+}
