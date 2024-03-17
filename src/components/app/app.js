@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ScrollToTop from "../scroll-to-top/ScrollToTop";
 
 import MainPage from "../pages/MainPage";
 import OurCoffeePage from "../pages/OurCoffeePage";
@@ -13,6 +14,7 @@ import "./app.scss";
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <div className="wrapper">
         <header className="header">
           <Navigation />
